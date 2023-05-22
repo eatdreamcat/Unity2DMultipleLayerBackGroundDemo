@@ -320,8 +320,6 @@ GameObject:
   - component: {fileID: 562047421}
   - component: {fileID: 562047423}
   - component: {fileID: 562047422}
-  - component: {fileID: 562047424}
-  - component: {fileID: 562047425}
   m_Layer: 5
   m_Name: Mountain
   m_TagString: Untagged
@@ -387,32 +385,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 562047420}
   m_CullTransparentMesh: 1
---- !u!114 &562047424
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 562047420}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eee2543a6e0d5214398baae23962b281, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ratio: 0.5
---- !u!114 &562047425
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 562047420}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3dc6b9cd471ca9d4597360561b420755, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scaleText: {fileID: 1819879079}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -640,7 +612,6 @@ GameObject:
   - component: {fileID: 1613172681}
   - component: {fileID: 1613172680}
   - component: {fileID: 1613172682}
-  - component: {fileID: 1613172683}
   m_Layer: 5
   m_Name: Shutter
   m_TagString: Untagged
@@ -715,23 +686,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1613172678}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eee2543a6e0d5214398baae23962b281, type: 3}
+  m_Script: {fileID: 11500000, guid: 3a4e1fb7f9318da45ad3c527b9690259, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ratio: 1
---- !u!114 &1613172683
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1613172678}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3dc6b9cd471ca9d4597360561b420755, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scaleText: {fileID: 0}
+  scaleText: {fileID: 1819879079}
+  m_ConstraintList:
+  - moveRatio: 0.5
+    go: {fileID: 562047420}
 --- !u!1 &1819879077
 GameObject:
   m_ObjectHideFlags: 0
